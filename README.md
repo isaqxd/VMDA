@@ -4,7 +4,7 @@ Trabalho academico das seguintes materias: Laboratorio de Banco de Dados, Progra
 
 ## COLABORADORES
 
-- Gilmar
-- Isaque
-- Luis Eduardo
-- Luiz Gustavo
+- Gilmar Viriato de Queiroz Junior
+- Isaque Costa Aragão
+- Luis Eduardo Oliveira Maia
+- Luiz Gustavo Gouvêa Damascena
