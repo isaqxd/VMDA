@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class PessoaController {
 
-    @GetMapping("/")
+    //@GetMapping("/")
     public String mostrarFormulario(Model model) {
         model.addAttribute("pessoa", new Pessoa());
         return "form";
     }
 
-    @PostMapping("/salvar")
+    //@PostMapping("/salvar")
     public String salvarPessoa(@ModelAttribute Pessoa pessoa, Model model) {
         try {
 

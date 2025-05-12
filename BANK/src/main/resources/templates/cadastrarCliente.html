@@ -12,7 +12,7 @@
     <p th:text="${erro}"></p>
 </div>
 
-<form th:action="@{/salvar}" th:object="${pessoa}" method="post">
+<form th:action="@{/salvar}" th:object="${criar}" method="post">
     <div class="mb-3">
         <label class="form-label">Nome:</label>
         <input type="text" class="form-control" th:field="*{nome}"/>
@@ -27,9 +27,18 @@
         <label class="form-label">CPF:</label>
         <input type="text" class="form-control" th:field="*{cpf}">
     </div>
+    <div class="mb-3">
+        <label>
+            <label class="form-label">Tipo de conta:</label>
+            <select class="form-select form-select-sm" th:field="*{tipoConta}">
+                <option value="">Selecione o tipo de conta</option>
+                <option th:each="tipo : ${T(com.vmda.bank.model.CadastroConta.CadastroConta.TipoConta).values()}"
+                        th:value="${tipo}" th:text="${tipo}"></option>
+            </select>
+        </label>
+    </div>
 
     <button type="submit" class="btn btn-primary">Salvar</button>
-
 </form>
 </body>
 </html>

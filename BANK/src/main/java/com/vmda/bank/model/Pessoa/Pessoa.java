@@ -1,9 +1,14 @@
 package com.vmda.bank.model.Pessoa;
 
+import java.util.Date;
+
 public class Pessoa {
     private String nome;
     private String email;
     private String cpf;
+    private String telefone;
+    private Date dataNascimento;
+
 
     public Pessoa() {
     }
@@ -12,6 +17,14 @@ public class Pessoa {
         this.nome = nome;
         this.email = email;
         this.cpf = cpf;
+    }
+
+    public Pessoa(String nome, String email, String cpf, String telefone, Date dataNascimento) {
+        this.nome = nome;
+        this.email = email;
+        this.cpf = cpf;
+        this.telefone = telefone;
+        this.dataNascimento = dataNascimento;
     }
 
     public String getNome() {
@@ -36,5 +49,21 @@ public class Pessoa {
 
     public void setCpf(String cpf) {
             this.cpf = cpf;
+    }
+
+    public String getTelefone(){
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public Date getDataNascimento(){
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(Date dataNascimento){
+        this.dataNascimento = dataNascimento;
     }
 }
