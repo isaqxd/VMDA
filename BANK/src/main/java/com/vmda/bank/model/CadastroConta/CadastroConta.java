@@ -1,6 +1,6 @@
 package com.vmda.bank.model.CadastroConta;
 
-import com.vmda.bank.model.Pessoa.Pessoa;
+import com.vmda.bank.model.Abstract.Pessoa;
 
 import java.util.Date;
 
@@ -10,9 +10,9 @@ public class CadastroConta extends Pessoa {
     private Date dataCriacao;
     private TipoConta tipoConta;
     public enum TipoConta {
-        corrente,
-        poupanca,
-        investimento
+        CORRENTE,
+        POUPANCA,
+        INVESTIMENTO
     }
 
     public void setTipoConta(TipoConta tipoConta) {

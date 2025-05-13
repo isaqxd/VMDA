@@ -1,25 +1,19 @@
-package com.vmda.bank.model.Pessoa;
+package com.vmda.bank.model.Abstract;
 
 import java.util.Date;
 
-public class Pessoa {
+public abstract class Pessoa {
     private String nome;
     private String email;
     private String cpf;
     private String telefone;
-    private Date dataNascimento;
+    private String dataNascimento;
 
 
     public Pessoa() {
     }
 
-    public Pessoa(String nome, String email, String cpf) {
-        this.nome = nome;
-        this.email = email;
-        this.cpf = cpf;
-    }
-
-    public Pessoa(String nome, String email, String cpf, String telefone, Date dataNascimento) {
+    public Pessoa(String nome, String email, String cpf, String telefone, String dataNascimento) {
         this.nome = nome;
         this.email = email;
         this.cpf = cpf;
@@ -59,11 +53,11 @@ public class Pessoa {
         this.telefone = telefone;
     }
 
-    public Date getDataNascimento(){
+    public String getDataNascimento(){
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento){
-        this.dataNascimento = dataNascimento;
+    public void setDataNascimento (String DataNascimento){
+        this.dataNascimento = DataNascimento;
     }
 }
